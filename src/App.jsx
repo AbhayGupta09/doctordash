@@ -5,13 +5,15 @@ import Appointments from './pages/Appointments.jsx';
 import Dashboard from './pages/Dashboard.jsx';
 import Patients from './pages/Patients.jsx';
 import Login from './patient/Login.jsx';
+import DoctorLogin from './pages/DoctorLogin.jsx';
+
 
 export default function App() {
   return (
     <Routes>
       {/* Login WITHOUT Layout */}
       <Route path="/patient/login" element={<Login />} />
-      <Route path="/" element={<Login />} />
+      <Route path="/" element={<DoctorLogin />} />
 
       {/* All these pages WITH Layout */}
       <Route element={<Layout />}>
