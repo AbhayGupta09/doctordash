@@ -1,8 +1,8 @@
-import { Routes, Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import Layout from './components/Layout.jsx';
-import Dashboard from './pages/Dashboard.jsx';
 import Appointments from './pages/Appointments.jsx';
+import Dashboard from './pages/Dashboard.jsx';
 import Patients from './pages/Patients.jsx';
 import Login from './patient/Login.jsx';
 
@@ -11,6 +11,7 @@ export default function App() {
     <Routes>
       {/* Login WITHOUT Layout */}
       <Route path="/patient/login" element={<Login />} />
+      <Route path="/" element={<Login />} />
 
       {/* All these pages WITH Layout */}
       <Route element={<Layout />}>
