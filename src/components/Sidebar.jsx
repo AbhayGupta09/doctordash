@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 import { IconDashboard, IconCalendar, IconUsers, IconPulse } from './Icons.jsx'
 
 const links = [
-  { to: '/', label: 'Dashboard', icon: IconDashboard, end: true },
+  { to: '/dashboard', label: 'Dashboard', icon: IconDashboard, end: true },
   { to: '/appointments', label: 'Appointments', icon: IconCalendar },
   { to: '/patients', label: 'Patients', icon: IconUsers },
 ]
